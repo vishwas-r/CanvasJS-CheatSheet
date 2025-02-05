@@ -1,4 +1,4 @@
-# CanvasJS Stacked Charts
+# CanvasJS Stacked Charts Cheatsheet
 ### Supported Stacked Chart Types
 
 | Chart Type          | `type` Value       |
@@ -22,7 +22,7 @@ data: [{
     dataPoints: [{ label: "A", y: 15 }, { label: "B", y: 25 }]
 }]
 ```
-![stacked-column-chart](images/stacked-column-chart.png)
+![stacked-column-chart](stacked-column-chart.png)
 
 ### Percentage Stacked Charts
 Show data as percentages in stacked charts:
@@ -37,4 +37,31 @@ data: [{
     dataPoints: [{ label: "A", y: 15 }, { label: "B", y: 25 }]
 }]
 ```
-![stacked-column-100-chart](images/stacked-column-100-chart.png)
+![stacked-column-100-chart](stacked-column-100-chart.png)
+
+### Key Options
+- `showInLegend`: Set to true to display the series in the legend.
+- `indexLabel`: Display values on top of bars/columns.
+```
+dataPoints: [
+    { label: "Category 1", y: 10, indexLabel: "10" },
+    { label: "Category 2", y: 15, indexLabel: "15" }
+]
+```
+- `color`: Customize the color of a series.
+```
+{
+    type: "stackedColumn",
+    name: "Series 1",
+    color: "#FF5733",
+    dataPoints: [...]
+}
+```
+
+### Events
+- **Click Event**: Add click handlers to data points.
+```
+dataPoints: [
+    { label: "Category 1", y: 10, click: function(e) { alert("Clicked: " + e.dataPoint.label); } }
+]
+```
