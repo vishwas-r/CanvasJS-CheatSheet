@@ -1,4 +1,4 @@
-# CanvasJS-CheatSheet
+# 📊CanvasJS CheatSheet📝
 
 ### Basic Setup
 Include CanvasJS Library
