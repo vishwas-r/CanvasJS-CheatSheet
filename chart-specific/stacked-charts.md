@@ -22,7 +22,7 @@ data: [{
     dataPoints: [{ label: "A", y: 15 }, { label: "B", y: 25 }]
 }]
 ```
-![stacked-column-chart](stacked-column-chart.png)
+![stacked-column-chart](images/stacked-column-chart.png)
 
 ### Percentage Stacked Charts
 Show data as percentages in stacked charts:
@@ -37,7 +37,7 @@ data: [{
     dataPoints: [{ label: "A", y: 15 }, { label: "B", y: 25 }]
 }]
 ```
-![stacked-column-100-chart](stacked-column-100-chart.png)
+![stacked-column-100-chart](images/stacked-column-100-chart.png)
 
 ### Key Options
 - `showInLegend`: Set to true to display the series in the legend.
